@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro - GameZone</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>GAMEZONE</h1>
+        <p>Registro de usuario</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="registro.html">Registrarse</a>
+        <a href="login.html">Iniciar sesión</a>
+    </nav>
+
+    <main>
+
+        <section class="contenedor-formulario">
+
+            <h2>Crear una cuenta</h2>
+
+            <p class="indicacion">
+                Completa los siguientes datos para registrarte.
+            </p>
+
+            <form id="formularioRegistro" novalidate>
+
+                <div class="campo">
+                    <label for="nombre">Nombre completo</label>
+
+                    <input
+                        type="text"
+                        id="nombre"
+                        name="nombre"
+                        maxlength="100"
+                        autocomplete="name"
+                        placeholder="Ejemplo: Carolina Andrade">
+
+                    <p class="error" id="errorNombre"></p>
+                </div>
+
+                <div class="campo">
+                    <label for="correo">Correo electrónico</label>
+
+                    <input
+                        type="email"
+                        id="correo"
+                        name="correo"
+                        maxlength="60"
+                        autocomplete="email"
+                        placeholder="Ejemplo: usuario@duoc.cl">
+
+                    <p class="error" id="errorCorreo"></p>
+                </div>
+
+                <div class="campo">
+                    <label for="contrasena">Contraseña</label>
+
+                    <input
+                        type="password"
+                        id="contrasena"
+                        name="contrasena"
+                        autocomplete="new-password"
+                        placeholder="Ingresa una contraseña">
+
+                    <p class="ayuda">
+                        Debe contener al menos 10 caracteres, una mayúscula,
+                        una minúscula, un número y un carácter especial.
+                    </p>
+
+                    <p class="error" id="errorContrasena"></p>
+                </div>
+
+                <div class="campo">
+                    <label for="confirmarContrasena">
+                        Confirmar contraseña
+                    </label>
+
+                    <input
+                        type="password"
+                        id="confirmarContrasena"
+                        name="confirmarContrasena"
+                        autocomplete="new-password"
+                        placeholder="Repite la contraseña">
+
+                    <p class="error" id="errorConfirmar"></p>
+                </div>
+
+                <div class="campo">
+                    <label for="telefono">Teléfono (opcional)</label>
+
+                    <input
+                        type="tel"
+                        id="telefono"
+                        name="telefono"
+                        maxlength="12"
+                        autocomplete="tel"
+                        placeholder="Ejemplo: 912345678">
+
+                    <p class="error" id="errorTelefono"></p>
+                </div>
+
+                <fieldset>
+                    <legend>Géneros favoritos</legend>
+
+                    <label class="opcion">
+                        <input type="checkbox" name="genero" value="Ficción">
+                        Ficción
+                    </label>
+
+                    <label class="opcion">
+                        <input type="checkbox" name="genero" value="No ficción">
+                        No ficción
+                    </label>
+
+                    <label class="opcion">
+                        <input type="checkbox" name="genero" value="Misterio">
+                        Misterio
+                    </label>
+
+                    <label class="opcion">
+                        <input type="checkbox" name="genero" value="Terror">
+                        Terror
+                    </label>
+
+                    <label class="opcion">
+                        <input type="checkbox" name="genero" value="Suspenso">
+                        Suspenso
+                    </label>
+
+                    <label class="opcion">
+                        <input type="checkbox" name="genero" value="Historia">
+                        Historia
+                    </label>
+
+                    <p class="error" id="errorGenero"></p>
+                </fieldset>
+
+                <button type="submit">Registrarse</button>
+
+                <p class="mensaje-exito" id="mensajeRegistro"></p>
+
+            </form>
+
+            <p class="enlace-formulario">
+                ¿Ya tienes una cuenta?
+                <a href="login.html">Inicia sesión aquí</a>
+            </p>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>GameZone - Carolina Andrade</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

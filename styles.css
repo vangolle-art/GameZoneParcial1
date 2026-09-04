@@ -1,0 +1,269 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #0d0d1a;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    padding: 30px 20px;
+    background-color: #191933;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    color: #7c4dff;
+    font-size: 42px;
+}
+
+header p {
+    margin-bottom: 0;
+    color: #d6d6e7;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 16px;
+    background-color: #25254a;
+}
+
+nav a {
+    color: #ffffff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #9d7cff;
+}
+
+main {
+    width: 90%;
+    max-width: 1100px;
+    min-height: 600px;
+    margin: 30px auto;
+}
+
+.presentacion {
+    padding: 60px 25px;
+    border-radius: 12px;
+    background-color: #191933;
+    text-align: center;
+}
+
+.presentacion h2 {
+    font-size: 36px;
+}
+
+.boton,
+button {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 13px 25px;
+    border: none;
+    border-radius: 7px;
+    background-color: #7c4dff;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.boton:hover,
+button:hover {
+    background-color: #6337dc;
+}
+
+#juegos {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.contenedor-juegos {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.tarjeta {
+    flex: 1;
+    padding: 25px;
+    border: 1px solid #7c4dff;
+    border-radius: 10px;
+    background-color: #191933;
+}
+
+.video {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.video iframe {
+    width: 100%;
+    max-width: 700px;
+    height: 390px;
+    border: none;
+    border-radius: 10px;
+}
+
+.contenedor-formulario {
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    padding: 30px;
+    border-radius: 12px;
+    background-color: #191933;
+}
+
+.contenedor-formulario h2 {
+    margin-top: 0;
+    text-align: center;
+}
+
+.login {
+    max-width: 480px;
+}
+
+.indicacion {
+    color: #d6d6e7;
+    text-align: center;
+}
+
+.campo {
+    margin-bottom: 18px;
+}
+
+label {
+    display: block;
+    margin-bottom: 7px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #4e4e72;
+    border-radius: 6px;
+    background-color: #ffffff;
+    color: #111111;
+    font-size: 16px;
+}
+
+input:focus {
+    border-color: #7c4dff;
+    outline: none;
+}
+
+fieldset {
+    margin-bottom: 20px;
+    padding: 18px;
+    border: 1px solid #7c4dff;
+    border-radius: 7px;
+}
+
+legend {
+    padding: 0 8px;
+    font-weight: bold;
+}
+
+.opcion {
+    display: inline-block;
+    width: 48%;
+    margin-bottom: 12px;
+    font-weight: normal;
+}
+
+.opcion input {
+    width: auto;
+    margin-right: 6px;
+}
+
+.error {
+    min-height: 18px;
+    margin: 5px 0 0;
+    color: #ff6b6b;
+    font-size: 14px;
+}
+
+.ayuda {
+    margin: 6px 0 0;
+    color: #bdbdd1;
+    font-size: 13px;
+}
+
+.mensaje-exito {
+    color: #60e6a8;
+    font-weight: bold;
+    text-align: center;
+}
+
+.enlace-formulario {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.enlace-formulario a {
+    color: #a98cff;
+}
+
+footer {
+    padding: 25px;
+    background-color: #191933;
+    color: #d6d6e7;
+    text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+
+    header h1 {
+        font-size: 32px;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+
+    main {
+        width: 94%;
+        margin-top: 20px;
+    }
+
+    .presentacion {
+        padding: 35px 18px;
+    }
+
+    .presentacion h2 {
+        font-size: 28px;
+    }
+
+    .contenedor-juegos {
+        flex-direction: column;
+    }
+
+    .contenedor-formulario {
+        padding: 20px;
+    }
+
+    .opcion {
+        display: block;
+        width: 100%;
+    }
+
+    .video iframe {
+        height: 230px;
+    }
+
+    button {
+        width: 100%;
+    }
+}
